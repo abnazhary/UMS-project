@@ -21,7 +21,6 @@ const Login: React.FC = () => {
       const response = await axios.post("https://dummyjson.com/auth/login", data);
       localStorage.setItem("userToken", response?.data?.accessToken);
 
-      // فحص وجود saveUserData قبل استدعائها
       if (authContext?.saveUserData) {
         authContext.saveUserData();
       }

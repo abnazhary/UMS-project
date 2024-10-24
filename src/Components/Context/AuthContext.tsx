@@ -2,6 +2,8 @@ import { jwtDecode } from "jwt-decode";
 import { createContext, useEffect, useState, ReactNode } from "react";
 
 interface UserData {
+  firstName?: string;
+  lastName?: string;
   id: number;
   name: string;
   email: string;

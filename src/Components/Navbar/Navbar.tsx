@@ -5,7 +5,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import { AuthContext } from '../Context/AuthContext';
 
 function BasicExample() {
-  const authContext = useContext(AuthContext); 
+  const authContext = useContext(AuthContext);
+
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
